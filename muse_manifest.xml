@@ -1,0 +1,46 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="AuroraRpg.com" resolutions="1x" timestamp="1536561392135">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="discord.css" crc="308329810" ref="discord"/>
+    <file name="bots.css" crc="131039766" ref="bots"/>
+    <file name="devices.css" crc="161465359" ref="devices"/>
+    <file name="index.css" crc="407917969" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="down-ar-3d.png" crc="442228218" seo="true" mt="1508014731000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:discord:devices:bots"/>
+    <file name="museutils.js" crc="340535759" ref="index:discord:devices:bots"/>
+    <file name="whatinput.js" crc="86476730" ref="index:discord:devices:bots"/>
+    <file name="museconfig.js" crc="4286661555" ref="index:discord:devices:bots"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:discord:devices:bots"/>
+    <file name="require.js" crc="7928878" ref="index:discord:devices:bots"/>
+  </folder>
+  <folder name="images">
+    <file name="cool galxay-crop-u142.jpg" crc="523008592" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u213-4.png" crc="22987671" ref="index"/>
+    <file name="u364-4.png" crc="4036674996" ref="index"/>
+    <file name="u279-4.png" crc="243409809" ref="index"/>
+    <file name="3051334-inline-i-0-the-lost-apple-logo-youve-never-seen-crop-u439.jpg" crc="3990942570" seo="true" ref="discord">
+      <caption webpage="discord" alt=""/>
+    </file>
+    <file name="u385-4.png" crc="3967147568" ref="discord"/>
+    <file name="u388-4.png" crc="4211519347" ref="discord"/>
+    <file name="u391-4.png" crc="4140469620" ref="discord"/>
+    <file name="u394-4.png" crc="3808412712" ref="discord"/>
+    <file name="u418-4.png" crc="223271992" ref="discord"/>
+    <file name="u421-4.png" crc="3947836073" ref="discord"/>
+    <file name="u427-4.png" crc="3851214386" ref="discord"/>
+    <file name="u433-4.png" crc="4278279014" ref="discord"/>
+    <file name="cool galxay.jpg" crc="512045107" seo="true" ref="devices">
+      <caption webpage="devices" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="76929245" seo="true" mt="1536560679552" redirect="true"/>
+  <file name="discord.html" crc="26552298" seo="true" mt="1536556119727" redirect="true"/>
+  <file name="devices.html" crc="4217529082" seo="true" mt="1536559437820" redirect="true"/>
+  <file name="bots.html" crc="3883117079" seo="true" mt="1536546321619" redirect="false"/>
+</manifest>
