@@ -1,6 +1,3 @@
-var VAL = "test" 
-
-
 const SEndit = function(oi){
   var Hook = "https://discord.com/api/webhooks/815751446150512680/DQbzHhndC9hsR_rYt5nZ6jK-Jua-YkbhKVtHQ4cikfc3tltinyX9F2m-UYVobYqCMW9V"
 
