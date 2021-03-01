@@ -19,3 +19,5 @@ const SEndit = function(oi){
     SEndit(data)
   });
 }
+
+Load()
