@@ -1,4 +1,4 @@
-# [aurorarpg.com](https://arias.tech)
+# [Aurora Rpg](https://Skycat.xyz)
 ✨ A simplistic site for the arias.tech brand. Colour scheme chosen from branding.
 
 ## What are the usage rights?
