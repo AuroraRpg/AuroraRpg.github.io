@@ -4,7 +4,7 @@ html,body {
 }
 
 .header {
-    background: linear-gradient(180deg, #ff0000 0%, #ff2bd1 100%);
+    background: linear-gradient(180deg, #ff3c00 0%, #ff0000 50%, #ff2bd1 100%);
 }
 
 .logo {
