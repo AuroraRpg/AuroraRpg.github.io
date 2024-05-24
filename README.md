@@ -1,4 +1,4 @@
-# [Aurora Rpg](https://Skycat.xyz)
+# [Aurora Rpg](https://wiisports.club)
 ✨ A simplistic site for the arias.tech brand. Colour scheme chosen from branding.
 
 ## What are the usage rights?
