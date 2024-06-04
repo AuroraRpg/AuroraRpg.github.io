@@ -1,0 +1,70 @@
+html,body {
+	height: 100%;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(180deg, #a200ff 0%, #ff00ff 100%);
+}
+
+.logo {
+    border: 3px solid rebeccapurple;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.icons {
+	color: #fff;
+	transition: all 0.2s;
+	font-size: 45px;
+}
+
+.icons:hover {
+	color: #ccc;
+}
+
+.spacing {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(200px, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: rgb(255, 185, 255);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #202020;
+    font-size: x-large;
+}
+
+.project-item p {
+    margin-top: 0;
+    color: #000000 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+footer {
+    background: #ff2b8e !important;;
+    padding: 3em !important;
+}

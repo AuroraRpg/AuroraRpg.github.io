@@ -1,5 +1,5 @@
 <?php
-$secret_key = "pamsams"; //Set this as your secret key, to prevent others uploading to your server.
+$secret_key = "ayr!"; //Set this as your secret key, to prevent others uploading to your server.
 $sharexdir = "img/"; //This is your file dir, also the link..
 $domain_url = 'http://wiisports.club/'; //Add an S at the end of HTTP if you have a SSL certificate.
 $lengthofstring = 5; //Length of the file name
