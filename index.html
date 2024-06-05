@@ -22,10 +22,12 @@
       <link href="css/main.css" rel="stylesheet" type="text/css">
       <link href="css/animate.css" rel="stylesheet" type="text/css">
       <script src="js/font-awesome.js"></script>
+      <script src="js/rickroll.js"></script>
       <link href="css/Headers/header.css" rel="stylesheet" type="text/css">
       <div class="topnav">
          <a class="active" href="index.html">Home</a>
-         <a href="Devices.html">Devices</a>
+         <a href="projects.html">Projects</a>
+         <a id="webhookButton">Contact</a>
 
        </div>
 
@@ -87,6 +89,36 @@
             </div>
          </div>
       </section>
+      <script>
+         document.getElementById('webhookButton').addEventListener('click', function() {
+    // Discord webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1247749365624340631/NcfynviBfHQ1obHQwVgvNnKwEud5gPa8qb7TnoEX3NZwqdvcYP9GrOIFBLnoTVQ0gZOQ';
+
+    // Message payload
+    const messagePayload = {
+        content: '<@164061868741099520> A user clicked the button on the Home page!'
+    };
+
+    // Send POST request to Discord webhook
+    fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(messagePayload)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        // Redirect to another website after sending the message
+        window.location.href = 'https://youtu.be/hvL1339luv0';
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+});
+      </script>
       <div class="spacing"></div>
       <footer class="footer has-text-white has-text-centered is-size-6">
          <p>Made with <i class="fas fa-heart fa-1x"></i> by <a href="https://aerofusion.us" class="has-text-white">AeroFusion and Aurora Rpg</a>. <a href="https://github.com/aurorarpg.github.io" class="has-text-white"><i class="fab fa-github"></i></a></p>

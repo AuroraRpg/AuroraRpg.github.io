@@ -24,8 +24,9 @@
       <script src="js/font-awesome.js"></script>
       <link href="css/Headers/projectheader.css" rel="stylesheet" type="text/css">
       <div class="topnav">
-         <a class="active" href="index.html">Home</a>
-         <a href="Devices.html">Devices</a>
+         <a href="index.html">Home</a>
+         <a class=active href="/">Projects</a>
+         <a id="webhookButton">Contact</a>
 
        </div>
 
@@ -67,16 +68,70 @@
                         <a href="https://replit.com/@hamwheezy/Sales-Tax-Calculator"></a><h3><b><u> Sales Tax Calculator</u></b></h3>
                         <p>Simply calculates items you buy and makes a reciept</p>
                         <div class="gallery">
-                           
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="img/Gallery/Sales Tax Receipt/1.png" class="gallery__img" alt="Image 1">
+                            </figure>
+                            <figure class="gallery__item gallery__item--2">
+                              <img src="img/Gallery/Sales Tax Receipt/2.png" class="gallery__img" alt="Image 2">
+                            </figure>
+                            <figure class="gallery__item gallery__item--3">
+                              <img src="img/Gallery/Sales Tax Receipt/3.png" class="gallery__img" alt="Image 3">
+                            </figure>
+                            <figure class="gallery__item gallery__item--4">
+                              <img src="img/Gallery/Sales Tax Receipt/4.png" class="gallery__img" alt="Image 4">
+                            </figure>
+                            <figure class="gallery__item gallery__item--5">
+                              <img src="img/Gallery/Sales Tax Receipt/5.png" class="gallery__img" alt="Image 5">
+                            </figure>
                         </div>
                      </div>
                      <div class="project-item">
                        <a href="https://replit.com/@AuroraRpg/Tapped-Press-Release-Maker"> <h3><b><u>Tapped</u></b></h3></a>
                         <p>Make your own python articles!</p>
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="img/Gallery/Tapped/1.png" class="gallery__img" alt="Image 1">
+                            </figure>
+                            <figure class="gallery__item gallery__item--2">
+                              <img src="img/Gallery/Tapped/2.png" class="gallery__img" alt="Image 2">
+                            </figure>
+                            <figure class="gallery__item gallery__item--3">
+                              <img src="img/Gallery/Tapped/3.png" class="gallery__img" alt="Image 3">
+                            </figure>
+                            <figure class="gallery__item gallery__item--4">
+                              <img src="img/Gallery/Tapped/4.png" class="gallery__img" alt="Image 4">
+                            </figure>
+                            <figure class="gallery__item gallery__item--5">
+                              <img src="img/Gallery/Tapped/5.png" class="gallery__img" alt="Image 5">
+                            </figure>
+                            <figure class="gallery__item gallery__item--6">
+                              <img src="img/Gallery/Tapped/6.png" class="gallery__img" alt="Image 5">
+                            </figure>
+                        </div>
                      </div>
                      <div class="project-item">
-                        <a href="https://replit.com/@AuroraRpg/Tic-Tac-Toe"><h3><b><u>Tic Tac Toe</u></b></h3>
+                        <a href="https://replit.com/@AuroraRpg/Tic-Tac-Toe"><h3><b><u>Tic Tac Toe</u></b></h3></a>
                         <p>Play a nice game of Tic Tac Toe with your friends or against a bot</p>
+                        <div class="gallery">
+                           <figure class="gallery__item gallery__item--1">
+                              <img src="img/Gallery/Tic Tac Toe/1.png" class="gallery__img" alt="Image 1">
+                            </figure>
+                            <figure class="gallery__item gallery__item--2">
+                              <img src="img/Gallery/Tic Tac Toe/2.png" class="gallery__img" alt="Image 2">
+                            </figure>
+                            <figure class="gallery__item gallery__item--3">
+                              <img src="img/Gallery/Tic Tac Toe/3.png" class="gallery__img" alt="Image 3">
+                            </figure>
+                            <figure class="gallery__item gallery__item--4">
+                              <img src="img/Gallery/Tic Tac Toe/4.png" class="gallery__img" alt="Image 4">
+                            </figure>
+                            <figure class="gallery__item gallery__item--5">
+                              <img src="img/Gallery/Tic Tac Toe/5.png" class="gallery__img" alt="Image 5">
+                            </figure>
+                            <figure class="gallery__item gallery__item--6">
+                              <img src="img/Gallery/Tic Tac Toe/6.png" class="gallery__img" alt="Image 5">
+                            </figure>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -99,9 +154,72 @@
             </div>
          </div>
       </section>
+      <div id="imageModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="modalImage">
+     </div>
+ 
+     <script>
+     document.addEventListener('DOMContentLoaded', function () {
+         var modal = document.getElementById('imageModal');
+ 
+         var modalImg = document.getElementById('modalImage');
+ 
+         var images = document.querySelectorAll('.gallery__img');
+ 
+         images.forEach(function(img) {
+             img.onclick = function(){
+                 modal.style.display = 'block';
+                 modalImg.src = this.src;
+             }
+         });
+ 
+         var span = document.getElementsByClassName('close')[0];
+ 
+         span.onclick = function() { 
+             modal.style.display = 'none';
+         }
+ 
+         modal.onclick = function(event) {
+             if (event.target === modal) {
+                 modal.style.display = 'none';
+             }
+         }
+     });
+     </script>
+     <script>
+               document.getElementById('webhookButton').addEventListener('click', function() {
+    // Discord webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1247749365624340631/NcfynviBfHQ1obHQwVgvNnKwEud5gPa8qb7TnoEX3NZwqdvcYP9GrOIFBLnoTVQ0gZOQ';
+
+    // Message payload
+    const messagePayload = {
+        content: '<@164061868741099520> A user clicked the button! on the Projects page'
+    };
+
+    // Send POST request to Discord webhook
+    fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(messagePayload)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        // Redirect to another website after sending the message
+        window.location.href = 'https://youtu.be/hvL1339luv0';
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+});
+     </script>
       <div class="spacing"></div>
       <footer class="footer has-text-white has-text-centered is-size-6">
-         <p>Made with <i class="fas fa-heart fa-1x"></i> by <a href="https://aerofusion.us" class="has-text-white">AeroFusion and Aurora Rpg</a>. <a href="https://github.com/aurorarpg.github.io" class="has-text-white"><i class="fab fa-github"></i></a></p>
+         <p>Made with <i class="fas fa-heart fa-1x"></i> by <a href="https://aerofusion.us" class="has-text-white">AeroFusion</a> and <a href="https://wiisports.club" class="has-text-white">Aurora Rpg.</a> <a href="https://github.com/aurorarpg.github.io" class="has-text-white"><i class="fab fa-github"></i></a></p>
       </footer>
    </body>
 </html>
